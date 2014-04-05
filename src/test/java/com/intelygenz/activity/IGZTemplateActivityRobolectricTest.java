@@ -1,21 +1,20 @@
-package com.example.activity;
+package com.intelygenz.activity;
 
 import android.app.Activity;
-import com.example.robolectric.DeckardActivity;
+import com.intelygenz.template.IGZTemplateActivity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 
-import static org.fest.assertions.api.Assertions.assertThat;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(RobolectricTestRunner.class)
-public class DeckardActivityRobolectricTest {
+public class IGZTemplateActivityRobolectricTest {
 
     @Test
     public void testSomething() throws Exception {
-        Activity activity = Robolectric.buildActivity(DeckardActivity.class).create().get();
+        Activity activity = Robolectric.buildActivity(IGZTemplateActivity.class).create().get();
         assertTrue(activity != null);
     }
 }
