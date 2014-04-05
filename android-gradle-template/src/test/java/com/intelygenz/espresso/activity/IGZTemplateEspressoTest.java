@@ -3,7 +3,7 @@ package com.intelygenz.espresso.activity;
 import android.test.ActivityInstrumentationTestCase2;
 import android.test.suitebuilder.annotation.LargeTest;
 import com.intelygenz.R;
-import com.intelygenz.template.IGZTemplateActivity;
+import com.intelygenz.template.screen.IGZTemplateActivity;
 
 import static com.google.android.apps.common.testing.ui.espresso.Espresso.onView;
 import static com.google.android.apps.common.testing.ui.espresso.assertion.ViewAssertions.matches;

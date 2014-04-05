@@ -1,4 +1,4 @@
-package com.intelygenz;
+package com.intelygenz.template;
 
 import android.app.Application;
 

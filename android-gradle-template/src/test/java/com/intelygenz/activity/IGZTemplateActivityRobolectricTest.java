@@ -1,7 +1,7 @@
 package com.intelygenz.activity;
 
 import android.app.Activity;
-import com.intelygenz.template.IGZTemplateActivity;
+import com.intelygenz.template.screen.IGZTemplateActivity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;

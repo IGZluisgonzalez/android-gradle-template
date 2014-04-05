@@ -1,4 +1,4 @@
-package com.intelygenz.template;
+package com.intelygenz.template.screen;
 
 import android.app.Activity;
 import android.os.Bundle;
