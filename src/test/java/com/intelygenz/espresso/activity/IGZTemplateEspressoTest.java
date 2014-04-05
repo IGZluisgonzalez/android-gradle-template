@@ -16,7 +16,7 @@ public class IGZTemplateEspressoTest extends ActivityInstrumentationTestCase2<IG
     @SuppressWarnings("deprecation")
      public IGZTemplateEspressoTest() {
        // This constructor was deprecated - but we want to support lower API levels.
-       super("com.example.activity", IGZTemplateActivity.class);
+       super("com.intelygenz.activity", IGZTemplateActivity.class);
      }
     @Override
     public void setUp() throws Exception {
