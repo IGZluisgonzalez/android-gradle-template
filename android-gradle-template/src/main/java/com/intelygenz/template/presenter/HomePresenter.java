@@ -22,6 +22,12 @@ public class HomePresenter implements IHomePresenter{
     @Override
     public void needNews() {
         List<NewsElement> news = repo.getNews();
-        screen.displayNews(news);
+        if (news != null && news.size() > 0) {
+            screen.displayNews(news);
+        } else {
+            screen.displayFetchingError();
+        }
+
+
     }
 }

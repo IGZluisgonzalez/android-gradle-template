@@ -7,6 +7,7 @@ import android.view.*;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 import com.intelygenz.template.R;
 import com.intelygenz.template.model.FakeDatabase;
 import com.intelygenz.template.model.NewsElement;
@@ -39,6 +40,7 @@ public class HomeScreen extends Activity implements IHomeScreen {
     }
 
     private void initPresenter() {
+        // fixme - dependency
         Repository repo = FakeDatabase.getInstance();
         this.presenter = new HomePresenter(this, repo);
     }
@@ -52,6 +54,11 @@ public class HomeScreen extends Activity implements IHomeScreen {
     public void displayNews(List<NewsElement> news) {
         NewsAdapter adapter = new NewsAdapter(this, R.layout.activity_home_screen, news);
         listView.setAdapter(adapter);
+    }
+
+    @Override
+    public void displayFetchingError() {
+        Toast.makeText(this, getString(R.string.error_fetching), Toast.LENGTH_SHORT);
     }
 
     public class NewsAdapter extends ArrayAdapter<NewsElement> {

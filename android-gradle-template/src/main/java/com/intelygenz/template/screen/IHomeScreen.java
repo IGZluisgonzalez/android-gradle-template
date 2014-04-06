@@ -14,4 +14,9 @@ public interface IHomeScreen {
      * @param news List of news to display
      */
     public void displayNews(List<NewsElement> news);
+
+    /**
+     * Display an error when can't get news
+     */
+    public void displayFetchingError();
 }
