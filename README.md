@@ -1,9 +1,6 @@
-# Deckard (for Gradle)
-[![Build Status](https://secure.travis-ci.org/robolectric/deckard-gradle.png?branch=master)](http://travis-ci.org/robolectric/deckard-gradle)
+# Android Gradle Template (MVP with Roboelectric + Espreso)
 
-Deckard is the simplest possible Android project that uses Robolectric for testing and Gradle to build. It has one Activity, a single Robolectric test of that Activity, and an Espresso test of that Activity.
-
-Deckard also imports seamlessly into IntelliJ and Android Studio, due to their support for gradle. See below for instructions.
+<< insert proper desc here >>
 
 ## Setup
 
