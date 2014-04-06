@@ -49,6 +49,7 @@ To start a new Android project:
 	at junit.textui.TestRunner.<init>(TestRunner.java:41)
 	```
     * For Intellij, go to Project Structure -> Modules -> deckard-gradle pane. In the Dependencies tab, move the Module SDK dependency (i.e. Android API 19 Platform) to be the last item in the list.
+    * In Run->Edit configuration->Defaults->JUnit->Working directory set the value $MODULE_DIR$ 
     * For Android Studio, dependency ordering is currently not modifiable via any GUI. Therefore, you must modify the project iml file directly as such and reload the project:
 
     ```html
