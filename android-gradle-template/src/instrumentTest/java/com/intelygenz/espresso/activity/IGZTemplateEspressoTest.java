@@ -4,6 +4,8 @@ import android.test.ActivityInstrumentationTestCase2;
 import android.test.suitebuilder.annotation.LargeTest;
 
 import com.intelygenz.template.R;
+import com.intelygenz.template.model.FakeDatabase;
+import com.intelygenz.template.presenter.HomePresenter;
 import com.intelygenz.template.screen.HomeScreen;
 
 import static com.google.android.apps.common.testing.ui.espresso.Espresso.onView;
@@ -17,7 +19,7 @@ public class IGZTemplateEspressoTest extends ActivityInstrumentationTestCase2<Ho
     @SuppressWarnings("deprecation")
      public IGZTemplateEspressoTest() {
        // This constructor was deprecated - but we want to support lower API levels.
-       super("com.intelygenz.activity", HomeScreen.class);
+       super("com.intelygenz.template.screen", HomeScreen.class);
      }
     @Override
     public void setUp() throws Exception {
@@ -28,6 +30,11 @@ public class IGZTemplateEspressoTest extends ActivityInstrumentationTestCase2<Ho
 
     public void testCheckText() {
         onView(withId(R.id.row_title))
-            .check(matches(withText("Title 1")));
+            .check(matches(withText("Title 2")));
       }
+
+	public void testPresenter() {
+		HomePresenter p = new HomePresenter(getActivity(), FakeDatabase.getInstance());
+		assertNotNull(p);
+	}
 }

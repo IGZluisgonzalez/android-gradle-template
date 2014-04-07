@@ -58,7 +58,7 @@ public class HomeScreen extends Activity implements IHomeScreen {
 
     @Override
     public void displayFetchingError() {
-        Toast.makeText(this, getString(R.string.error_fetching), Toast.LENGTH_SHORT);
+        Toast.makeText(this, getString(R.string.error_fetching), Toast.LENGTH_SHORT).show();
     }
 
     public class NewsAdapter extends ArrayAdapter<NewsElement> {
