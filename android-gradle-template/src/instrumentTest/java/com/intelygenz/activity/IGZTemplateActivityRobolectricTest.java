@@ -1,13 +1,8 @@
 package com.intelygenz.activity;
 
-import android.app.Activity;
-import android.view.View;
 import android.widget.ListView;
 import com.intelygenz.template.R;
-import com.intelygenz.template.model.FakeDatabase;
-import com.intelygenz.template.model.Repository;
-import com.intelygenz.template.presenter.HomePresenter;
-import com.intelygenz.template.presenter.IHomePresenter;
+
 import com.intelygenz.template.screen.HomeScreen;
 import org.junit.After;
 import org.junit.Before;

@@ -13,6 +13,8 @@ import static com.google.android.apps.common.testing.ui.espresso.assertion.ViewA
 import static com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers.withId;
 import static com.google.android.apps.common.testing.ui.espresso.matcher.ViewMatchers.withText;
 
+
+
 @LargeTest
 public class IGZTemplateEspressoTest extends ActivityInstrumentationTestCase2<HomeScreen> {
 
